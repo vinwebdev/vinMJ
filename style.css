@@ -282,8 +282,19 @@ body {
     .a_ulswebsite:hover {
             background-color: #004080;
             transform: translateY(-2px); /* small lift effect */
-    }
-
+                }
+    .a_sncswebsite { 
+                    display: inline-block; padding: 10px 18px; background-color: #0066cc;
+                    color: #fff;
+                    text-decoration: none;
+                    font-weight: 600;
+                    border-radius: 8px;
+                    transition: background-color 0.3s, transform 0.2s;
+                }
+    .a_sncswebsite:hover {
+            background-color: #004080;
+            transform: translateY(-2px); /* small lift effect */
+                }
     
     /* ================== MEDIA QUERIES ================== */
 
@@ -346,3 +357,4 @@ body {
       .overlay { display: none !important; }
       #mainContainer { font-size: 18px; padding: 40px; }
     }
+
