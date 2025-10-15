@@ -370,6 +370,11 @@ body {
       .personal-card h3 { font-size: 1rem; }
       .prev, .next { font-size: 16px; padding: 6px 10px; }
       .dot { height: 10px; width: 10px; }
+      .fade img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            }
     }
 /***** END PERSONAL CONTENT - CARD PERSONAL *****/
 /***** CARD-UNIVERSITY *****/
@@ -842,3 +847,4 @@ body {
       .overlay { display: none !important; }
       #mainContainer { font-size: 18px; padding: 40px; }
     }
+
