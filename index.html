@@ -62,36 +62,76 @@
 
   <!-- Main Content -->
   <div id="mainContainer" class="cls_mainContainer">
-    <h1>Mejane  Arenas  Gonzales</h2>
-      <p class="clsprofessionalCareer">Tell something about Mejane here...</p>
+    <h1>Mejane A. Gonzales</h2>
     <hr class="sidebar-line">       <!-- LINE -->
-      <h3>DREAMS/PERSPECTIVE</h3>
+      <h3 class="mainpage-motto">“Building a sustainable future through innovation and integrity.”</h3>
+      <p class="motto-description">
+        “Building a sustainable future through innovation and integrity” embodies a commitment to creating structures 
+        that balance progress with environmental responsibility. 
+        It highlights the importance of using modern, creative solutions while maintaining ethical standards in every project. 
+        This motto reflects a vision of engineering that builds not just for today, but for generations to come.
+      </p>
     <hr class="sidebar-line">       <!-- LINE -->
-      <ul>
-          <li>Tell something about your drams/perspectice here...</li>
-      </ul>
-      <hr class="sidebar-line">       <!-- LINE -->        
-        <h3>YOUR FUTURE DREAMS</h3>
-      <hr class="sidebar-line">       <!-- LINE -->
-      <ul>
-          <li>Add the image here...</li>        
-      </ul>
+      <div class="card-mainpage slideshow-container">
+          <div class="slide fade">
+             <img src="imgunderconstruction1.png" alt="Activity 1" class="imgmotto">
+          </div>
+          <div class="slide fade">
+             <img src="imgunderconstruction2.png" alt="Activity 2" class="imgmotto">
+          </div>
+          <div class="slide fade">
+             <img src="imgunderconstruction3.png" alt="Activity 2" class="imgmotto">
+          </div>
+      </div>
   </div>
 
 <!-- Hidden Sections -->
 <!-- FIRST SIDEBAR MENU -->
 <div id="PersonalContent" class="hidden-content">
+ 
       <div class="card">
           <h3><i class="fas fa-id-badge" style="color:#0f068b;"></i>&nbsp; Personal Information</h3>
-        <hr class="sidebar-line">       <!-- LINE -->
-        <ul class="ul_personal">
-          <li>Birth Date: June 19, 2004</li>
-          <li>Address: Barangay Rizal</li>
-          <li>Municipality: Santiago City</li>
-          <li>Province: Isabela</li>
-          <li>Country: Philippines</li>
-        </ul>
       </div>
+        <hr class="sidebar-line">       <!-- LINE -->
+        <div class="personal-grid">
+            <!-- Left card -->
+            <div class="card-personal">
+              <ul class="ul_personal">
+                <li>Birth Date: June 19, 2004</li>
+                <li>Address: Barangay Rizal</li>
+                <li>Municipality: Santiago City</li>
+                <li>Province: Isabela</li>
+                <li>Country: Philippines</li>
+              </ul>
+            </div>
+            <!-- Right card (Image Slideshow) -->
+            <div class="card-personal slideshow-container">
+              <div class="slide fade">
+                <img src="Profile-A.png" alt="Activity 1">
+              </div>
+              <div class="slide fade">
+                <img src="Profile-B.png" alt="Activity 2">
+              </div>
+              <div class="slide fade">
+                <img src="Profile-C.png" alt="Activity 3">
+              </div>
+              <div class="slide fade">
+                <img src="Profile-D.png" alt="Activity 4">
+              </div>
+
+                  <!-- Navigation Buttons -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                  <!-- Dot Indicators -->
+                  <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                  </div>
+            </div>
+        </div>
 </div>
 <!-- SECOND SIDEBAR MENU -->
   <div id="EducationContent" class="hidden-content">   
@@ -102,282 +142,408 @@
               <li>Current Course: <b>B</b>achelor of <b>S</b>cience in <b>C</b>ivil <b>E</b>ngineering</li>              
             </ul>
         </div>
-        <div class="card">
-            <h3><i class="fas fa-university" style="color:#0f068b;"></i>&nbsp; College (2023 - Present)</h3>
-              <hr class="sidebar-line">       <!-- LINE -->
-              <img src="ULS Logo.jpg" alt="ULS Picture" class="uls-logo">
-              <ul class="ul_education">
-                <p>University of La Salette</p>
-                <p>College Department</p>
-                <p>Santiago City Isabela, Philippines</p>
-                <br>
-                <a href="https://uls.edu.ph/" target="_blank" rel="noopener noreferrer" class="a_ulswebsite">visit ULS Website</a>
-              </ul>
+
+        <div class="card-university">
+              <div class="school-header">
+                <h3>
+                  <img src="ULSHS-Logo.png" alt="ULSHS Logo" class="logo-header">
+                  University of La Salette Inc. (2022 - Present)   
+                  <a href="https://uls.edu.ph/" target="_blank" rel="noopener noreferrer" class="a_ulswebsite"> visit ULS Website</a>
+                </h3>
+              </div>
+                <hr class="sidebar-line">       <!-- LINE -->
+                <!-- Wrapper for the 3 columns -->
+                <!-- ✅ Put all cards inside the grid wrapper -->
+                <div class="university-grid">
+                  <div class="card-school">
+                        <p>First Year - Civil Engineering</p>     
+                        <p>Videos & Pictures here...</p>                 
+                      </ul>
+                  </div>       
+                  <div class="card-school">
+                        <p>Second Year - Civil Engineering</p>      
+                        <p>Videos & Pictures here...</p>                 
+                      </ul>
+                  </div> 
+                  <div class="card-school">
+                        <p>Third Year - Civil Engineering</p> 
+                        <p>Videos & Pictures here...</p>                 
+                      </ul>
+                  </div> 
+                  <div class="card-school">
+                        <p>Fourth Year - Civil Engineering</p> 
+                        <p>Videos & Pictures here...</p>                 
+                      </ul>
+                  </div> 
+                </div>                            
         </div>
-        <div class="card">
-            <h3><i class="fas fa-certificate" style="color:#0f068b;"></i>&nbsp; Senior High School (2021 - 2022)</h3>
-              <hr class="sidebar-line">       <!-- LINE -->
-              <img src="ULS Logo.jpg" alt="ULS Picture" class="uls-logo">
-              <ul class="ul_education">
-                <p>University of La Salette</p>
-                <p>High School Department</p>
-                <p>Santiago City ISabela, Philippines</p>
-                <br>
-                <a href="https://uls.edu.ph/" target="_blank" rel="noopener noreferrer" class="a_ulswebsite">visit ULS Website</a>
-              </ul>
+        <div class="card-hs-senior">
+            <h3>
+              <img src="ULSHS-Logo.png" alt="ULAHS Logo" class="logo-header"> 
+              University of La Salette Senior High School (2020 - 2021)
+              <a href="https://www.facebook.com/ULSHSNewsAndUpdates" target="_blank" rel="noopener noreferrer" class="a_ulswebsite">visit ULSHS Facebook</a>        
+            </h3>
+             <hr class="sidebar-line">       <!-- LINE -->
+              <!-- Wrapper for the 2 columns -->
+              <!-- ✅ Put all cards inside the grid wrapper -->
+                <div class="hs-senior-grid">
+                  <div class="card-school">
+                        <p>Grade 11</p>     
+                        <p>Videos & Pictures here...</p>                 
+                      </ul>
+                  </div>       
+                  <div class="card-school">
+                        <p>Grade 12</p>     
+                        <p>Videos & Pictures here...</p>                 
+                      </ul>
+                  </div> 
+                </div>     
         </div>
-        <div class="card">
-            <h3><i class="fas fa-certificate" style="color:#0f068b;"></i>&nbsp; High School (2017 - 2021)</h3>
-              <hr class="sidebar-line">       <!-- LINE -->
-              <img src="ULSHS1.png" alt="ULS Picture" class="uls-logo">
-              <ul class="ul_education">
-                <p>University of La Salette</p>
-                <p>High School Department</p>
-                <p>Santiago City ISabela, Philippines</p>
-                <br>
-                <a href="https://uls.edu.ph/" target="_blank" rel="noopener noreferrer" class="a_ulswebsite">visit ULS Website</a>
-              </ul>
+        <div class="card-hs">
+            <h3>
+              <img src="ULSHS-Logo.png" alt="ULAHS Logo" class="logo-header"> 
+              University of La Salette High School Department (2016 - 2020)
+              <a href="https://www.facebook.com/ULSHSNewsAndUpdates" target="_blank" rel="noopener noreferrer" class="a_ulswebsite">visit ULSHS Facebook</a>        
+            </h3>
+             <hr class="sidebar-line">       <!-- LINE -->
+              <!-- Wrapper for the 4 columns -->
+              <!-- ✅ Put all cards inside the grid wrapper -->
+                <div class="hs-grid">
+                  <div class="card-school">
+                        <p>Grade 7</p>     
+                        <p>Videos & Pictures here...</p>                 
+                      </ul>
+                  </div>       
+                  <div class="card-school">
+                        <p>Grade 8</p>     
+                        <p>Videos & Pictures here...</p>                 
+                      </ul>
+                  </div> 
+                  <div class="card-school">
+                        <p>Grade 9</p>     
+                        <p>Videos & Pictures here...</p>                 
+                      </ul>
+                  </div> 
+                  <div class="card-school">
+                        <p>Grade 10</p>     
+                        <p>Videos & Pictures here...</p>                 
+                      </ul>
+                  </div>    
+                </div>     
         </div>
-        <div class="card">
-            <h3><i class="fas fa-school" style="color:#0f068b;"></i>&nbsp; Elementary (2011 - 2016)</h3>
+        <div class="card-elem">
+            <h3>
+              <img src="SNCS-Logo.png" alt="SNCS Logo" class="logo-header"> 
+              Santiago North Central School (2011 - 2016)
+              <a href="https://www.facebook.com/profile.php?id=100064176031514" target="_blank" rel="noopener noreferrer" class="a_ulswebsite">visit SNCS Facebook</a>
+            </h3>
               <hr class="sidebar-line">       <!-- LINE -->
-              <img src="SNCS-Logo.png" alt="ULS Picture" class="uls-logo">
-              <ul class="ul_education">
-                <p>Santiago North Central Elementary School</p>
-                <p>Centro East, Santiago City</p>
-                <p>Isabela, Philippines</p>
-                <br>
-                <a href="https://www.facebook.com/p/Santiago-North-Central-School-Sped-Center-Group-100064176031514/" target="_blank" rel="noopener noreferrer" class="a_sncswebsite">visit SNCS Website</a>
-              </ul>
+              <!-- Wrapper for the 6 columns -->
+              <!-- ✅ Put all cards inside the grid wrapper -->
+                <div class="elem-grid">
+                  <div class="card-school">
+                        <p>Grade 1</p>     
+                        <p>Videos & Pictures here...</p>                 
+                      </ul>
+                  </div>       
+                  <div class="card-school">
+                        <p>Grade 2</p>     
+                        <p>Videos & Pictures here...</p>                 
+                      </ul>
+                  </div> 
+                  <div class="card-school">
+                        <p>Grade 3</p>     
+                        <p>Videos & Pictures here...</p>                 
+                      </ul>
+                  </div> 
+                  <div class="card-school">
+                        <p>Grade 4</p>     
+                        <p>Videos & Pictures here...</p>                 
+                      </ul>
+                  </div>       
+                  <div class="card-school">
+                        <p>Grade 5</p>     
+                        <p>Videos & Pictures here...</p>                 
+                      </ul>
+                  </div> 
+                  <div class="card-school">
+                        <p>Grade 6</p>     
+                        <p>Videos & Pictures here...</p>                 
+                      </ul>
+                  </div> 
+                </div>     
         </div>
   </div>
 <!-- THIRD SIDEBAR MENU -->
   <div id="SkillsContent" class="hidden-content"> 
-    <div class="card">
-     <h3><i class="fas fa-lightbulb" style="color:#0f068b;"></i>&nbsp; Skills & Talents</h3>
+    <div class="card-skills-header">
+        <h3><i class="fas fa-lightbulb" style="color:#0f068b;"></i>&nbsp; Skills & Talents</h3>
     </div>
-     <div class="card"> 
-     <h3><i class="fas fa-chalkboard-teacher" style="color:#0f068b;"></i>&nbsp; Cognitive / Academic Skills</h3>
-      <hr class="sidebar-line">       <!-- LINE -->
-      <ul class="ul_keystrenght">
-        <li>Critical Thinking</il>
-        <li>Problem-solving</li>
-        <li>Research and analyis</li>
-        <li>Logical Reasoning</li>
-        <li>Attention to detail</li>
-        <li>Time Management</li>
-        <li>Organization skills</li>
-        <li>Adaptability</li>
-        <li>Study and learning efficiency</li>
-        <li>Note-taking and summarizing</li>
-      </ul>
-    </div>
-    <div class="card"> 
-     <h3><i class="fas fa-microchip" style="color:#0f068b;"></i>&nbsp; Technical & Digital Skills</h3>
-      <hr class="sidebar-line">       <!-- LINE -->
-      <ul class="ul_technical">
-        <li>Programming (HTML, CSS, JavaScript, Python, etc.)</il>
-        <li>Database management (MySQL, Firebase)</li>
-        <li>Web design and development</li>
-        <li>Graphic design (Canva, Photoshop)</li>
-        <li>Video editing (CapCut, Premiere Pro)</li>
-        <li>Typing proficiency</li>
-        <li>Data entry and documentation</li>
-        <li>Troubleshooting and system setup</li>
-      </ul>
-    </div>
-    <div class="card"> 
-     <h3><i class="fas fa-comments" style="color:#0f068b;"></i>&nbsp; Communication Skills</h3>
-      <hr class="sidebar-line">       <!-- LINE -->
-      <ul class="ul_communication">
-        <li>Verbal and writeen communication</il>
-        <li>Public speaking</li>
-        <li>Active listening</li>
-        <li>Presentation skills</li>
-        <li>Collaboration and teamwork</li>
-        <li>Negotiation</li>
-        <li>Multilingual communication</li>
-        <li>Report and documentation writing</li>
-      </ul>
-    </div>
-    <div class="card"> 
-     <h3><i class="fas fa-music" style="color:#0f068b;"></i>&nbsp; Creative Talents</h3>
-      <hr class="sidebar-line">       <!-- LINE -->
-      <ul class="ul_talents">
-        <li>Drawing and illustration</il>
-        <li>Creative writing</il>
-        <li>Music (instrument, vocals, composition)</il>
-        <li>Photography</il>
-        <li>Video production</il>
-        <li>Acting or performing arts</il>
-        <li>Crafting and design</il>
-        <li>Innovation and idea generation</il>
-      </ul>
-    </div>
-    <div class="card"> 
-     <h3><i class="fas fa-user-tie" style="color:#0f068b;"></i>&nbsp; Leadership & Interpersonal Skills</h3>
-      <hr class="sidebar-line">       <!-- LINE -->
-      <ul class="ul_leadership">
-        <li>Leadership and Management</il>
-        <li>Team coordination</il>
-        <li>Decision-making</il>
-        <li>Conflict resolution</il>
-        <li>Mentoring or coaching</il>
-        <li>Empathy and emotional intelligence</li>
-        <li>Responsibility and reliability</li>
-      </ul>
-    </div>
-    <div class="card"> 
-     <h3><i class="fas fa-chart-line" style="color:#0f068b;"></i>&nbsp; Personal Development / Work Habits</h3>
-      <hr class="sidebar-line">       <!-- LINE -->
-      <ul class="ul_habits">
-        <li>Self-motiviation</il>
-        <li>Goal setting and achievement</il>
-        <li>Flexibility and adaptability</il>
-        <li>Work ethic and discipline</il>
-        <li>Initiative and independence</il>
-        <li>Openness to feedback</il>
-        <li>Positive attitude</il>
-      </ul>
-    </div>
-    <div class="card"> 
-     <h3><i class="fas fa-people-group" style="color:#0f068b"></i>&nbsp; Community & Social Talents</h3>
-      <hr class="sidebar-line">       <!-- LINE -->
-      <ul class="ul_socialtalents">
-        <li>Volunteering and social involvement</il>
-        <li>Event organization</il>
-        <li>Fundraising and advocacy</il>
-        <li>Cultural awareness</il>
-        <li>Environmental awareness and Responsibility</il>
-      </ul>
-    </div>
+        <!--1st Row-->
+     <div class="card-skills-header"> 
+        <h3><i class="fas fa-chalkboard-teacher" style="color:#0f068b;"></i>&nbsp; Cognitive / Academic Skills</h3>
+     </div>
+     <hr class="sidebar-line"> <!-- LINE -->
+        <div class="skills-grid">
+          <div class="card-skills">
+            <ul class="ul_skills">
+              <li>Critical Thinking</il>
+              <li>Problem-solving</li>
+              <li>Research and analyis</li>
+              <li>Logical Reasoning</li>
+              <li>Attention to detail</li>
+              <li>Time Management</li>
+              <li>Organization skills</li>
+              <li>Adaptability</li>
+              <li>Study and learning efficiency</li>
+              <li>Note-taking and summarizing</li>
+            </ul>
+          </div>
+          <div class="card-skills">
+            <ul class="ul_skills">
+              <li>PICTURE HERE...</li>
+            </ul>
+          </div>
+        </div>
+        <!--2nd Row-->
+     <div class="card-skills-header"> 
+        <h3><i class="fas fa-music" style="color:#0f068b;"></i>&nbsp; Music/Singing</h3>
+     </div>
+     <hr class="sidebar-line"> <!-- LINE -->
+        <div class="skills-grid">
+          <div class="card-skills">
+            <ul class="ul_skills">
+              <li>Singing</li>
+            </ul>
+          </div>
+          <div class="card-skills">
+            <ul class="ul_skills">
+              <li>PICTURE HERE...</li>
+            </ul>
+          </div>
+        </div>
+        <!--3rd Row-->
+    <div class="card-skills-header"> 
+        <h3><i class="fas fa-music" style="color:#0f068b;"></i>&nbsp; Creative Talents</h3>
+     </div>
+     <hr class="sidebar-line"> <!-- LINE -->
+        <div class="skills-grid">
+          <div class="card-skills">
+            <ul class="ul_skills">
+              <li>Drawing and illustration</il>
+              <li>Creative writing</il>
+              <li>Music (instrument, vocals, composition)</il>
+              <li>Photography</il>
+              <li>Video production</il>
+              <li>Acting or performing arts</il>
+              <li>Crafting and design</il>
+              <li>Innovation and idea generation</il>
+            </ul>
+          </div>
+          <div class="card-skills">
+            <ul class="ul_skills">
+              <li>PICTURE HERE...</li>
+            </ul>
+          </div>
+        </div>
   </div>
 <!-- FOURTH SIDEBAR MENU -->
   <div id="InterestContent" class="hidden-content">  
-    <div class="card">
+    <div class="card-interest-header">
       <h3><i class="fas fa-music" style="color:#0f068b;"></i>&nbsp; Interest & Hobbies</h3>
     </div>
-     <div class="card">
+          <!--1st Row-->
+    <div class="card-interest-header">
       <h3><i class="fas fa-lightbulb" style="color:#0f068b;"></i>&nbsp; Creative & Artistic Hobbies</h3>
-      <hr class="sidebar-line">       <!-- LINE -->
-      <ul class="ul_interestartistic">
-        <li>Drawing and sketching</li>
-        <li>Dancing</li>
-        <li>Acting and performing arts</li>
-        <li>Interior or fashion design</li>
-      </ul>
     </div>
-    <div class="card">
-      <h3><i class="fas fa-tools" style="color:#0f068b;"></i>&nbsp; Academic & Intellectual Interests</h3>
-      <hr class="sidebar-line">       <!-- LINE -->
-      <ul class="ul_interestintellectual">
-        <li>Reading books or articles</li>
-        <li>Writing essays or journals</li>
-        <li>Attending seminars or workshops</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3><i class="fas fa-running" style="color:#0f068b;"></i>&nbsp; Sports & Physical Activities</h3>
-      <hr class="sidebar-line">       <!-- LINE -->
-      <ul class="ul_interestsports">
-        <li>Volleyball</li>
-        <li>Badminton</li>
-        <li>Running jogging</li>
-        <li>Swimming</li>
-        <li>Hiking or camping</li>
-        <li>Martial arts</li>
-        <li>Esports and competitive gaming</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3><i class="fas fa-id-badge" style="color:#0f068b;"></i>&nbsp; Personal & Lifestyle Interests</h3>
-      <hr class="sidebar-line">       <!-- LINE -->
-      <ul class="ul_interestlifestyle">
-        <li>Traveling and exploring new places</li>
-        <li>Cooking baking</li>
-        <li>Gardening</li>
-        <li>Listening to music or podcasts</li>
-        <li>Watching education videos or documentation</li>
-        <li>Journaling or mindfulness activities</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3><i class="fas fa-chart-line" style="color:#0f068b;"></i>&nbsp; Professional Growth Interest</h3>
-      <hr class="sidebar-line">       <!-- LINE -->
-      <ul class="ul_interestgrowth">
-        <li>Leasdership and management training</li>
-        <li>Innovation and management culture</li>
-      </ul>
-    </div>
+      <hr class="sidebar-line"> <!-- LINE -->
+     <div class="interest-grid">
+          <div class="card-interest">
+            <ul class="ul_interest">
+              <li>Drawing and sketching</li>
+              <li>Dancing</li>
+              <li>Acting and performing arts</li>
+              <li>Interior or fashion design</li>
+            </ul>
+          </div>
+          <div class="card-interest">
+            <ul class="ul_interest">
+              <li>PICTURE HERE...</li>
+            </ul>
+          </div>
+        </div>
+        <!--2nd Row-->
+     <div class="card-interest-header"> 
+        <h3><i class="fas fa-music" style="color:#0f068b;"></i>&nbsp;  Sports & Physical Activities</h3>
+     </div>
+     <hr class="sidebar-line"> <!-- LINE -->
+        <div class="interest-grid">
+          <div class="card-interest">
+            <ul class="ul_interest">
+              <li>Volleyball</li>
+              <li>Badminton</li>
+              <li>Running jogging</li>
+              <li>Swimming</li>
+              <li>Hiking or camping</li>
+              <li>Martial arts</li>
+              <li>Esports and competitive gaming</li>
+            </ul>
+          </div>
+          <div class="card-interest">
+            <ul class="ul_interest">
+              <li>PICTURE HERE...</li>
+            </ul>
+          </div>
+        </div>
+        <!--3rd Row-->
+    <div class="card-interest-header"> 
+        <h3><i class="fas fa-music" style="color:#0f068b;"></i>&nbsp; Personal & Lifestyle Interests</h3>
+     </div>
+     <hr class="sidebar-line"> <!-- LINE -->
+        <div class="interest-grid">
+          <div class="card-interest">
+            <ul class="ul_interest">
+              <li>Traveling and exploring new places</li>
+              <li>Cooking baking</li>
+              <li>Gardening</li>
+              <li>Listening to music or podcasts</li>
+              <li>Watching education videos or documentation</li>
+              <li>Journaling or mindfulness activities</li>
+            </ul>
+          </div>
+          <div class="card-interest">
+            <ul class="ul_interest">
+              <li>PICTURE HERE...</li>
+            </ul>
+          </div>
+        </div>
   </div>
 <!-- FIFTH SIDEBAR MENU -->
   <div id="AcadevelopmentContent" class="hidden-content">  
-    <div class="card">
+    <div class="card-academic-header">
       <h3><i class="fas fa-book-open" style="color:#0f068b;"></i>&nbsp; Academic Development</h3>
     </div>
-    <div class="card">
+          <!--1st Row-->
+    <div class="card-academic-header">
       <h3><i class="fas fa-chart-line" style="color:#0f068b;"></i>&nbsp; Academic Improvement & Enrichment</h3>
-      <hr class="sidebar-line">       <!-- LINE -->
-      <ul class="ul_academicenrichment">
-        <li>Participating in academic workshops and seminars</li>
-        <li>Attending summer learning programs</li>
-        <li>Engaing in independent study or research projects</li>
-      </ul>
     </div>
-    <div class="card">
-      <h3><i class="fas fa-chalkboard-teacher" style="color:#0f068b;"></i>&nbsp; Skill Development</h3>
-      <hr class="sidebar-line">       <!-- LINE -->
-      <ul class="ul_academicskill">
-        <li>Developing research and analytical abilities</li>
-        <li>Building presentation and public speaking confidence</li>
-        <li>Learning collaboration and teamwork skills</li>
-      </ul>
+      <hr class="sidebar-line"> <!-- LINE -->
+      <div class="academic-grid">
+          <div class="card-academic">
+            <ul class="ul_academic">
+              <li>Participating in academic workshops and seminars</li>
+              <li>Attending summer learning programs</li>
+              <li>Engaing in independent study or research projects</li>
+            </ul>
+          </div>
+          <div class="card-academic">
+            <ul class="ul_academic">
+              <li>PICTURE HERE...</li>
+            </ul>
+          </div>
+      </div>
+          <!--2nd Row-->
+          <div class="card-academic-header">
+      <h3><i class="fas fa-chart-line" style="color:#0f068b;"></i>&nbsp; Skill Development</h3>
     </div>
-     <div class="card">
-      <h3><i class="fas fa-certificate" style="color:#0f068b;"></i>&nbsp; Academic Achievements & Progress</h3>
-      <hr class="sidebar-line">       <!-- LINE -->
-      <ul class="ul_academicachievement">
-        <li>Consistent honor roll or dean's list recognition</li>
-        <li>Receiving academic awards or citations</li>
-        <li>Demonstrating progress in specfic subjets</li>
-      </ul>
+      <hr class="sidebar-line"> <!-- LINE -->
+      <div class="academic-grid">
+          <div class="card-academic">
+            <ul class="ul_academic">
+              <li>Developing research and analytical abilities</li>
+              <li>Building presentation and public speaking confidence</li>
+              <li>Learning collaboration and teamwork skills</li>
+            </ul>
+          </div>
+          <div class="card-academic">
+            <ul class="ul_academic">
+              <li>PICTURE HERE...</li>
+            </ul>
+          </div>
+      </div>
+          <!--3rd Row-->
+    <div class="card-academic-header">
+      <h3><i class="fas fa-chart-line" style="color:#0f068b;"></i>&nbsp; Academic Achievements</h3>
     </div>
+      <hr class="sidebar-line"> <!-- LINE -->
+      <div class="academic-grid">
+          <div class="card-academic">
+            <ul class="ul_academic">
+              <li>Consistent honor roll or dean's list recognition</li>
+              <li>Receiving academic awards or citations</li>
+              <li>Demonstrating progress in specfic subjets</li>
+            </ul>
+          </div>
+          <div class="card-academic">
+            <ul class="ul_academic">
+              <li>PICTURE HERE...</li>
+            </ul>
+          </div>
+        </div>
   </div>
 <!-- SIXTH SIDEBAR MENU -->
   <div id="ExtraContent" class="hidden-content">  
-    <div class="card">
+    <div class="card-extra-header">
       <h3><i class="fas fa-users" style="color:#0f068b;"></i>&nbsp; Extra Curricular Activities</h3>
     </div>
-    <div class="card">
+          <!--1st Row-->
+    <div class="card-extra-header">
       <h3><i class="fas fa-user-friends" style="color:#0f068b;"></i>&nbsp; School Organization & Clubs</h3>
-      <hr class="sidebar-line">       <!-- LINE -->
-      <ul class="ul_extra">
-        <li>Student Council</li>
-        <li>Science Club</li>
-        <li>Math Club</li>
-        <li>Journalism or Campus Publlication</li>
-      </ul>
     </div>
-    <div class="card">
-     <h3><i class="fas fa-hands-helping" style="color:#0f068b;"></i>&nbsp; Leadership and Service Activities</h3>
-      <hr class="sidebar-line">       <!-- LINE -->
-      <ul class="ul_extra">
-        <li>Class representative or officer</li>
-        <li>Volunteer or community service project</li>
-        <li>Outreach and charity programs</li>
-      </ul>
+      <hr class="sidebar-line"><!-- LINE -->
+      <div class="extra-activities-grid">
+        <div class="extra-activities-card">          
+            <ul class="ul_extra">
+              <li>Student Council</li>
+              <li>Science Club</li>
+              <li>Math Club</li>
+              <li>Journalism or Campus Publlication</li>
+             </ul>
+          </ul>
+        </div>
+        <div class="extra-activities-card">
+          <p> PICTURE HERE...</p>
+        </div>
+      </div>
+            <!--2nd Row/Grip-->
+      <div class="card-extra-header">
+      <h3><i class="fas fa-user-friends" style="color:#0f068b;"></i>&nbsp; Leadership and Service Activities</h3>
     </div>
-    <div class="card">
-     <h3><i class="fas fa-chart-line" style="color:#0f068b;"></i>&nbsp; Personal and Professional Growth Activities</h3>
-      <hr class="sidebar-line">       <!-- LINE -->
-      <ul class="ul_extra">
-        <li>Workshops and training sessions</li>
-        <li>Life skills and leadership seminars</li>
-        <li>Personality programs</li>
-      </ul>
+      <hr class="sidebar-line"><!-- LINE -->
+      <div class="extra-activities-grid-2nd">
+        <div class="extra-activities-card-2nd">          
+            <p> PICTURE HERE...</p>    
+        </div>
+        <div class="extra-activities-card-2nd">
+          <ul class="ul_extra">
+              <li>Class representative or officer</li>
+              <li>Volunteer or community service project</li>
+              <li>Outreach and charity programs</li>
+          </ul>
+        </div>
+      </div>
+            <!--3rd Row-->
+      <div class="card-extra-header">
+      <h3><i class="fas fa-user-friends" style="color:#0f068b;"></i>&nbsp; Personal and Professional Growth Activities</h3>
     </div>
+      <hr class="sidebar-line"><!-- LINE -->
+      <div class="extra-activities-grid">
+        <div class="extra-activities-card">          
+            <ul class="ul_extra">
+              <li>Workshops and training sessions</li>
+              <li>Life skills and leadership seminars</li>
+              <li>Personality programs</li>
+             </ul>
+          </ul>
+        </div>
+        <div class="extra-activities-card">
+          <p> PICTURE HERE...</p>
+        </div>
+      </div>
+            <!--End here...-->
   </div>
   </body>
+
 <script>
   const menuLinks = document.querySelectorAll(".sidebar a");
   const container = document.getElementById("mainContainer");
@@ -464,49 +630,62 @@
       }
     });
   });
-</script>  
+</script> 
+
+
+<!-- Script that manually click to change the image -->
+<script>
+let slideIndex = 1;
+let slideTimer;
+
+showSlides(slideIndex);
+startAutoSlide();
+
+// Next/Previous buttons
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+  resetAutoSlide();
+}
+
+// Dots control
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+  resetAutoSlide();
+}
+
+// Show slides core function
+function showSlides(n) {
+  const slides = document.getElementsByClassName("slide");
+  const dots = document.getElementsByClassName("dot");
+
+  if (n > slides.length) { slideIndex = 1; }
+  if (n < 1) { slideIndex = slides.length; }
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].classList.remove("active");
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].classList.add("active");
+}
+
+// Auto-slide every 5 seconds
+function startAutoSlide() {
+  slideTimer = setInterval(() => {
+    slideIndex++;
+    showSlides(slideIndex);
+  }, 5000);
+}
+
+// Restart timer when user interacts
+function resetAutoSlide() {
+  clearInterval(slideTimer);
+  startAutoSlide();
+}
+</script>
 </body>
 </html>
-
-<!--
-Features added:
-Hamburger button (☰ Menu) on mobile (<600px).
-Sidebar slides in/out smoothly.
-Sidebar auto-closes after a menu item is clicked on mobile.
-Still works perfectly with fade-in animation + responsiveness.
-
-Now:
-On mobile (<600px), the sidebar slides over content.
-A dark overlay appears → clicking it closes the sidebar.
-On tablet & larger screens, the sidebar is always visible (no overlay).
-Works with your fade-in content animation.
-
-Changes made:
-.sidebar starts with transform: translateX(-100%) (off-screen).
-.sidebar.show slides it in with transform: translateX(0).
-Smooth transition: transition: transform 0.3s ease-in-out;.
-So now the sidebar slides smoothly in/out on mobile, instead of instantly appearing.
-
-Alright 🚀 — let’s extend the behavior:
-Mobile (<600px) → Sidebar slides in from the left.
-Tablet (601px – 1024px) → Sidebar slides in from the right.
-Laptop & Desktop (≥1025px) → Sidebar is always visible (fixed, no overlay).
-
-✅ Now:
-Phones: sidebar slides in from the left.
-Tablets: sidebar slides in from the right.
-Laptops/desktops: sidebar is always visible, no overlay.
-
-✅ Fixed:
-Removed duplicate/conflicting .hidden vs .show logic → now only .show controls visibility.
-Sidebar left on mobile, right on tablets, always visible on larger screens.
-Overlay only appears for mobile + tablets.
-
--->
-
-
-
-
-
-
-
