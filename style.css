@@ -730,9 +730,11 @@ body {
     /* ✅ Responsive layout */
     @media (max-width: 992px) {
       .extra-activities-grid { grid-template-columns: repeat(2, 1fr); }
+      .extra-activities-grid-2nd { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 600px) {
       .extra-activities-grid { grid-template-columns: 1fr; }
+      .extra-activities-grid-2nd { grid-template-columns: 1fr; }
       /*.uls-logo-header { width: 32px; height: 32px; }*/
       .extra-activities-card h3 { font-size: 1rem; }
     }
@@ -847,4 +849,5 @@ body {
       .overlay { display: none !important; }
       #mainContainer { font-size: 18px; padding: 40px; }
     }
+
 
