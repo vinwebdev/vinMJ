@@ -220,39 +220,527 @@ body {
     }
   #mainContainer h3
     {
-        font-size: 20px;
+        
         font-style: normal;
         padding: 10px;        
         margin-top: 0px;
         margin-bottom: 0px;
         background-color: whitesmoke;
         color: black;
+        display: flex; /* Align the items one line*/
+        align-items: center; /* Center the items */
+        margin-bottom: 5px;
         
     }
     #mainContainer ul{
         font-size: 16px;
     }
-    #mainContainer .clsprofessionalCareer{
+    #mainContainer .motto-description{
         text-align: justify;
-        padding-left: 25px;
+        padding-left: 45px;
+        font-size: 14px;
     }
-  
+    #mainContainer .card-mainpage{
+      background-image: url("imgunderConstruction0.png");
+    }
+    #mainContainer .imgmotto{
+      width: 100%;
+      height: 100%;     
+    }
 /* ✅ Fade-in animation */
     .fade-in { animation: fadeIn 0.5s ease-in-out; }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(10px); }
       to   { opacity: 1; transform: translateY(0); }
     }
-
     /* Hidden sections */
     .hidden-content { display: none; }
-    .card {
-      background: #fff;
+
+/***** PERSONAL CONTENT - CARD PERSONAL *****/
+    .card-personal {
+      
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      color: black;
+      min-height: 75vh; /* uses 30% of viewport height */
+    }
+    .personal-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr; /* Left card smaller, right card bigger */
+      /* grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+      gap:15px;
+    }
+    .slideshow-container {
+      position: relative;
+      max-width: 100%;
+      height: 100%;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+    .personal-grid .card-personal:nth-child(1) {
+      background-image: url("personalbg1.png"); /* your image path */
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      color: black; /* optional: improve text visibility */
+    } 
+    /* 🎨 Add background image to the 2nd (right) card */
+    .personal-grid .card-personal:nth-child(2) {
+      background-image: url("Profile-E.png"); /* your image path */
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      color: white; /* optional: improve text visibility */
+    }
+    /*** For Slide show control area ***/
+    .slideshow-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .slide {
+      display: none;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+      /* Fade + Zoom animation */
+    .fade img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+      animation: fadeZoom 1.5s ease-in-out;
+    }
+  
+   @keyframes fadeZoom {
+    0% { opacity: 0; transform: scale(1.02); }
+    100% { opacity: 1; transform: scale(1); }
+}
+    /* Next & Prev buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 45%;
+      width: auto;
+      padding: 10px 14px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 3px;
+      user-select: none;
+      background: rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease;
+    }
+    .next { right: 10px; }
+    .prev { left: 10px; }
+    .prev:hover, .next:hover { background: rgba(0, 0, 0, 0.8); }
+
+    /* Dots */
+    .dots {
+      text-align: center;
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+    }
+    .dot {
+      cursor: pointer;
+      height: 12px;
+      width: 12px;
+      margin: 0 4px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.4s;
+    }
+  .dot.active, .dot:hover { background-color: #020346; }
+
+     /* ✅ Responsive layout */
+    @media (max-width: 992px) {
+      .personal-grid { grid-template-columns: repeat(2, 1fr); }
+    
+    }
+    @media (max-width: 600px) {
+      .personal-grid { grid-template-columns: 1fr; }
+      .slideshow-container img { height: 250px; }
+      .personal-card h3 { font-size: 1rem; }
+      .prev, .next { font-size: 16px; padding: 6px 10px; }
+      .dot { height: 10px; width: 10px; }
+    }
+/***** END PERSONAL CONTENT - CARD PERSONAL *****/
+/***** CARD-UNIVERSITY *****/
+    .card-university {
+      background-image: url("ULS1.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      color: white;
+    }
+    /* Keep header fixed above the grid */
+    .card-university h3 {
+       font-size: 15px;
+       padding: 10px;        
+       margin-top: 0px;
+       background: linear-gradient(135deg, #f8f9fa, #0c7df6,#011e3c ); /* navy → light blue → white */
+       color: black;
+       display: flex; /* Align the items one line*/
+       align-items: center; /* Center the items */
+       margin-bottom: 10px;
+       gap: 15px; /* Space bet. text & image */
+       border-radius: 8px;
+    }
+    /* ✅ Use grid for 4 columns */
+    .university-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+      gap: 15px;
+    }
+
+    .card-school {
+      background: rgba(16, 1, 61, 0.5);
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .card-school:hover {
+      transform: translateY(-5px);
+    }
+      .card-school:hover {
+      transform: translateY(-5px);
+    }
+
+    /* ✅ Responsive layout */
+    @media (max-width: 992px) {
+      .university-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .university-grid { grid-template-columns: 1fr; }
+      .uls-logo-header { width: 32px; height: 32px; }
+      .card-university h3 { font-size: 1rem; }
+    }
+/***** END-CARD-UNIVERSITY *****/
+/***** CARD-SENIOR HIGH SCHOOL *****/
+    .card-hs-senior {
+      background-image: url("ULSHS2.jpg");
+      background-size: cover; /* Makes image fill the card */
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat;
       padding: 15px;
       margin-bottom: 15px;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       align-items: center;
+      color: white;
+    }
+    .card-hs-senior h3 {
+       font-size: 15px;
+       padding: 10px;        
+       margin-top: 0px;
+       background: linear-gradient(135deg, #f8f9fa, #0c7df6,#011e3c ); /* navy → light blue → white */
+       color: black;
+       display: flex; /* Align the items one line*/
+       align-items: center; /* Center the items */
+       margin-bottom: 10px;
+       gap: 8px; /* Space bet. text & image */
+       border-radius: 8px;
+    }
+    .hs-senior-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+      gap: 25px;
+    }    
+     /* ✅ Responsive layout */
+    @media (max-width: 992px) {
+      .hs-senior-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .hs-senior-grid { grid-template-columns: 1fr; }
+      .logo-header { width: 32px; height: 32px; }
+      .card-hs-senior h3 { font-size: 1rem; }
+    }
+/***** END-CARD-SENIOR HIGH SCHOOL *****/
+/***** CARD-HIGH SCHOOL *****/
+    .card-hs {
+      background-image: url("ULSHS2.jpg");
+      background-size: cover; /* Makes image fill the card */
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      align-items: center;
+      color: white;
+    }
+    .card-hs h3 {
+       font-size: 15px;
+       padding: 10px;        
+       margin-top: 0px;
+       background: linear-gradient(135deg, #f8f9fa, #0c7df6,#011e3c ); /* navy → light blue → white */
+       color: black;
+       display: flex; /* Align the items one line*/
+       align-items: center; /* Center the items */
+       margin-bottom: 10px;
+       gap: 8px; /* Space bet. text & image */
+       border-radius: 8px;
+    }
+    .hs-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+      gap: 15px;
+    }    
+     /* ✅ Responsive layout */
+    @media (max-width: 992px) {
+      .hs-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .hs-grid { grid-template-columns: 1fr; }
+      .logo-header { width: 32px; height: 32px; }
+      .card-hs h3 { font-size: 1rem; }
+    }
+/***** END-CARD-HIGH SCHOOL *****/
+/***** CARD-ELEMENTARY *****/
+    .card-elem {
+      background-image: url("SNCS1.jpg");
+      background-size: cover; /* Makes image fill the card */
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      align-items: center;
+      color: white;
+    }
+    .card-elem h3 {
+       font-size: 15px;
+       padding: 10px;        
+       margin-top: 0px;
+       background: linear-gradient(135deg, #f8f9fa, #811226,#3c010b ); /* navy → light blue → white */
+       color: black;
+       display: flex; /* Align the items one line*/
+       align-items: center; /* Center the items */
+       margin-bottom: 10px;
+       gap: 8px; /* Space bet. text & image */
+       border-radius: 8px;
+    }
+    .elem-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr); /* 5 equal columns */
+      gap: 15px;
+    }    
+     /* ✅ Responsive layout */
+    @media (max-width: 992px) {
+      .elem-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .elem-grid { grid-template-columns: 1fr; }
+      .logo-header { width: 32px; height: 32px; }
+      .card-elem h3 { font-size: 1rem; }
+    }
+/***** END-CARD-ELEMENTARY *****/
+/***** SKILLS CONTENT - CARD SKILLS *****/    
+    .card-skills {
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      color: black;
+      min-height: 50vh; /* uses 30% of viewport height */
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: .7fr 2fr; /* Left card smaller, right card bigger */
+      gap: 15px;
+    }
+    .skills-grid .card-skills:nth-child(1){
+      background-image: url("personalbg1.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      color: black;
+    }
+    .skills-grid .card-skills:nth-child(2){
+      background-image: url("personalbg1.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      color: black;
+    }
+    /* ✅ Responsive layout */
+    @media (max-width: 992px) {
+      .skills-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .skills-grid { grid-template-columns: 1fr; }
+      /*.uls-logo-header { width: 32px; height: 32px; }*/
+      .card-skills-header h3 { font-size: 1rem; }
+    }
+/***** END-SKILLS-CONTENT *****/
+/***** INTEREST CONTENT - CARD SKILLS *****/    
+    .card-interest {
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      color: black;
+      min-height: 50vh; /* uses 30% of viewport height */
+    }
+    .interest-grid {
+      display: grid;
+      grid-template-columns: .7fr 2fr; /* Left card smaller, right card bigger */
+      gap: 15px;
+    }
+    .interest-grid .card-interest:nth-child(1){
+      background-image: url("personalbg1.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      color: black;
+    }
+    .interest-grid .card-interest:nth-child(2){
+      background-image: url("personalbg1.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      color: black;
+    }
+    /* ✅ Responsive layout */
+    @media (max-width: 992px) {
+      .interest-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .interest-grid { grid-template-columns: 1fr; }
+      /*.uls-logo-header { width: 32px; height: 32px; }*/
+      .card-interest-header h3 { font-size: 1rem; }
+    }
+/***** END-INTEREST-CONTENT *****/
+/***** ACADEMIC CONTENT - CARD SKILLS *****/    
+    .card-academic {
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      color: black;
+      min-height: 50vh; /* uses 30% of viewport height */
+    }
+    .academic-grid {
+      display: grid;
+      grid-template-columns: .7fr 2fr; /* Left card smaller, right card bigger */
+      gap: 15px;
+    }
+    .academic-grid .card-academic:nth-child(1){
+      background-image: url("personalbg1.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      color: black;
+    }
+    .academic-grid .card-academic:nth-child(2){
+      background-image: url("personalbg1.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      color: black;
+    }    
+    /* ✅ Responsive layout */
+    @media (max-width: 992px) {
+      .academic-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .academic-grid { grid-template-columns: 1fr; }
+      /*.uls-logo-header { width: 32px; height: 32px; }*/
+      .card-academic-header h3 { font-size: 1rem; }
+    }
+/***** END-ACADEMIC-CONTENT *****/
+/***** EXTRACURRICULAR ACTIVITIES CONTENT *****/
+    /***** 1st Grid *****/
+    .extra-activities-card{
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      color: black;
+      min-height: 50vh; /* uses 30% of veiwport height */
+    }
+    .extra-activities-grid{
+      display: grid;
+      grid-template-columns: .7fr 2fr; /* Left card smaller while right card bigger */
+      gap: 15px;
+    }
+    .extra-activities-grid .extra-activities-card:nth-child(1){
+      background-image: url("personalbg1.png");
+      background-repeat:no-repeat;
+      background-size:cover;
+      background-position:center ;
+      color: black;
+    }
+   .extra-activities-grid .extra-activities-card:nth-child(2){
+      background-image: url("personalbg1.png");
+      background-repeat:no-repeat;
+      background-size:cover;
+      background-position:center ;
+      color: black;
+    }
+    /***** End 1st Grid *****/
+    /***** 2nd Grid *****/
+    .extra-activities-card-2nd{
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      color: black;
+      min-height: 50vh; /* uses 30% of veiwport height */
+    }
+    .extra-activities-grid-2nd{
+      display: grid;
+      grid-template-columns: 2fr .7fr; /* Left card smaller while right card bigger */
+      gap: 15px;
+    }
+    .extra-activities-grid-2nd .extra-activities-card-2nd:nth-child(1){
+      background-image: url("personalbg1.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      color: black;
+    }
+   .extra-activities-grid-2nd .extra-activities-card-2nd:nth-child(2){
+      background-image: url("personalbg1.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      color: black;
+    }
+    /***** End 2nd Grid *****/
+    /* ✅ Responsive layout */
+    @media (max-width: 992px) {
+      .extra-activities-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .extra-activities-grid { grid-template-columns: 1fr; }
+      /*.uls-logo-header { width: 32px; height: 32px; }*/
+      .extra-activities-card h3 { font-size: 1rem; }
+    }
+/***** END-EXTRACURRICULAR ACTIVTIES *****/
+/***** UNIVERSAL .card-school/.uls-logo/.logo-header *****/
+    .card-school {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 2px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      align-items: center;
+      color: rgb(255, 255, 255);
     }
     .uls-logo {
       width: 90px;           /* fixed width */
@@ -262,8 +750,17 @@ body {
       display: block;         /* needed for margin auto */
       margin: 0px 70px;      /* center image */
       padding: 0px;           /* framed look */
-     
     }
+     .logo-header{
+      width: 50px;           /* fixed width */
+      height: 50px;          /* same as width */
+      border-radius: 50%;     /* makes it circular */
+      object-fit: cover;      /* keeps aspect ratio, crops overflow */
+      display: block;         /* needed for margin auto */
+      margin: 0px 10px;      /* center image */
+      padding: 0px;           /* framed look */
+    }
+  /***** END-UNIVERSAL .card-school/.uls-logo/.logo-header *****/
     .ul_personal{ line-height: 1.5; }
     .ul_education{ line-height: .5; } /* text-align: center; align-items: center;}*/
     .ul_skills{ line-height: 1.5; }
@@ -271,31 +768,19 @@ body {
     .ul_academic{ line-height: 1.5; }
     .ul_extra{ line-height: 1.5;  }
     .a_ulswebsite { 
-                    display: inline-block; padding: 10px 18px; background-color: #0066cc;
+                    display: inline-block; padding: 7px 15px;  
+                    background: linear-gradient(135deg, #091520, #104e52);
                     color: #fff;
                     text-decoration: none;
-                    font-weight: 600;
+                    font-size: 14px;
+                    font-weight: 300;
                     border-radius: 8px;
                     transition: background-color 0.3s, transform 0.2s;
                 }
-
     .a_ulswebsite:hover {
             background-color: #004080;
             transform: translateY(-2px); /* small lift effect */
-                }
-    .a_sncswebsite { 
-                    display: inline-block; padding: 10px 18px; background-color: #0066cc;
-                    color: #fff;
-                    text-decoration: none;
-                    font-weight: 600;
-                    border-radius: 8px;
-                    transition: background-color 0.3s, transform 0.2s;
-                }
-    .a_sncswebsite:hover {
-            background-color: #004080;
-            transform: translateY(-2px); /* small lift effect */
-                }
-    
+    }
     /* ================== MEDIA QUERIES ================== */
 
     /* Mobile <600px → slide left */
@@ -357,4 +842,3 @@ body {
       .overlay { display: none !important; }
       #mainContainer { font-size: 18px; padding: 40px; }
     }
-
