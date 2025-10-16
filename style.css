@@ -829,7 +829,7 @@ body {
       }
       .chat-btn.messenger:hover .chat-label {
         opacity: 1;
-        right: 30px;
+        right: 15px;
         background-color: #006fe0;
         font-size: 13px;
         padding:0;
@@ -844,7 +844,7 @@ body {
       }
       .chat-btn.whatsapp:hover .chat-label {
         opacity: 1;
-        right: 30px;
+        right: 15px;
         background-color: #1ebe57;
         font-size: 13px;
         padding:0;
@@ -945,6 +945,7 @@ body {
       .overlay { display: none !important; }
       #mainContainer { font-size: 18px; padding: 40px; }
     }
+
 
 
 
